@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg-black-4 {
+  background-color: rgba(0, 0, 0, 0.4); /* negro con 30% de opacidad */
+}
+
+image-login{
+  background-image: url(assets/Recovery.png);
+}
+
+image-register{
+  background-image: url(assets/Register.png);
+}
+
+image-recovery{
+  background-image: url(assets/Login.png);
+}
+
+font-cursive{
+  font-family: cursive;
+}
+
+/* Scrollbar global básico */
+
+/* Ancho */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track (fondo) */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Thumb (barra) */
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;          /* gris claro */
+  border-radius: 999px;
+}
+
+/* Thumb hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;          /* gris un poco más oscuro */
+}
+
+.top-06{
+  top: 3px;
+}
