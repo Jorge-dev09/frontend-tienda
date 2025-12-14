@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import adminTiendaAPI from '../../services/adminTiendaAPI';
-import ProductoFormModal from '../../components/adminTienda/ProductoFormModal';
+import ProductoFormModal from '../../components/AdminTienda/ProductoFormModal';
 
 const AdminTiendaPage = () => {
   const [productos, setProductos] = useState([]);
