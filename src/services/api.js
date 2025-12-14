@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Configura la URL base de tu backend Node.js
 // Ajusta el puerto según el que uses (ejemplo: 3000, 5000, 8080, etc.)
-const API_BASE_URL = 'http://localhost:3000/api'; // ← CAMBIA EL PUERTO SEGÚN TU SERVER
+const API_BASE_URL = 'https://backend-tienda-production-2cd7.up.railway.app/api'; // ← CAMBIA EL PUERTO SEGÚN TU SERVER
 
 // Crear instancia de axios con configuración base
 const api = axios.create({
@@ -10,6 +10,7 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
+  withCredentials: true,
 });
 
 // Interceptor para añadir token en cada request
