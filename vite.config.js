@@ -8,6 +8,8 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+
+  // SOLO para desarrollo local
   server: {
     port: 5173,
     proxy: {
@@ -16,5 +18,10 @@ export default defineConfig({
         changeOrigin: true,
       }
     }
+  },
+
+  // NECESARIO para Railway (producción)
+  preview: {
+    allowedHosts: ['.railway.app']
   }
 })
