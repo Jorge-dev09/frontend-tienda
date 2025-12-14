@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://backend-tienda-production-2cd7.up.railway.app/api';
 
 // Crear instancia de axios con configuración base
 const api = axios.create({
