@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 
-const instance = axios.create({baseURL: 'http://localhost:3000/api'});
+const instance = axios.create({baseURL: 'https://backend-tienda-production-2cd7.up.railway.app/api'});
 
 // Añadir token automáticamente si existe
 instance.interceptors.request.use((config) => {
